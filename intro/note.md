@@ -115,5 +115,3 @@ Modern APIs	Good	Old (but stable)	Excellent
 	•	Manage cookies, sessions, and localStorage
 	•	Automate login and scraping content
 	•	Deal with captchas and detection (advanced)
-
----
