@@ -1,4 +1,4 @@
-import puppeteer from "puppeteer-core";
+import puppeteer from "puppeteer";
 import fs from 'fs'
 
 async function main() {
@@ -7,6 +7,7 @@ async function main() {
     await page.goto("https://example.com")
     const content = await page.content()
     fs.writeFileSync("example.puppeteer.html", content)
+    await browser.close()
 }
 
-main().catch(err=> console.log(err))
+main().catch(err=> console.log("--------------Error--------\n", err))
