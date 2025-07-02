@@ -1,0 +1,1 @@
+fetch("https://example.com").then(res => res.text()).then(text => console.log(text)).catch(err=> console.error(err))
